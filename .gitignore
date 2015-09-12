@@ -1,0 +1,3 @@
+.vagrant
+Vagrantfile.local
+salt/pillar/local/**/*.sls

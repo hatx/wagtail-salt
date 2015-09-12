@@ -1,0 +1,20 @@
+# This is the minion configuration file.  See:
+# http://docs.saltstack.com/en/latest/ref/configuration/minion.html
+
+file_client: local
+
+file_roots:
+  base:
+    - /srv/salt/vagrant-states
+    - /srv/salt/states
+
+
+# To use saltstack formulas via gitfs:
+#fileserver_backend:
+#  - roots
+#  - git
+#
+#gitfs_provider: gitpython
+#
+#gitfs_remotes:
+#  - https://github.com/saltstack-formulas/vim-formula.git
